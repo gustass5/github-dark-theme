@@ -1,12 +1,15 @@
 /* # Layout */
 
+html {
+    background-color: inherit;
+}
+
 body {
     background-color: $bg-color !important;
     color: $text-color !important;
     &.page-responsive {
         .pagehead {
             background-color: $bg-color !important;
-
         }
     }
 
@@ -31,10 +34,12 @@ body {
         border-color: $border-color !important;
     }
     /* Repo label (i.e. Private, Archived) */
-    .repohead .Label--outline,
-    .repo-list .Label--outline {
-        color: $text-color !important;
-        border-color: $light-border-color !important;
+    .Label {
+        &.Label--outline,
+        &.Label--gray {
+            color: $text-color !important;
+            border-color: $light-border-color !important;
+        }
     }
     .site-header {
         background: $head-bg !important;
@@ -65,6 +70,7 @@ body {
     }
     .flash {
         background-color: $tag-bg-color !important;
+        background-image: none !important;
         color: $link-color !important;
     }
     .blankslate {
@@ -109,6 +115,9 @@ body {
     }
     :not(.commit-build-statuses) > a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
+    }
+    .color-text-primary {
+        color: $text-color !important;
     }
     div.commit-build-statuses {
         .text-green {
@@ -227,6 +236,9 @@ body {
     }
     .btn-octicon:hover {
         color: $bright-text-color !important;
+    }
+    .octicon-x:hover {
+        fill: $bright-text-color !important;
     }
     .btn-octicon-danger:hover {
         color: $text-red-color !important;
@@ -382,6 +394,13 @@ body {
     .header-search-current .jump-to-field-active {
         color: $text-color !important;
     }
+
+    .js-jump-to-badge-search-text-default,
+    .js-jump-to-badge-search-text-global,
+    .js-jump-to-badge-jump {
+        color: $text-color !important;
+    }
+
     .code-list .code-list-item + .code-list-item {
         border-color: $border-color !important;
     }
@@ -432,6 +451,9 @@ body {
     .Box-header {
         background-color: $dropdown-bg !important;
         border-color: $border-color !important;
+        .text-mono {
+            background-color: transparent !important;
+        }
     }
     .conversation-list-heading {
         border-color: $border-color !important;
@@ -440,7 +462,7 @@ body {
             background: $bg-color;
         }
     }
-    .simple-conversation-list>li {
+    .simple-conversation-list > li {
         border-color: $border-color !important;
     }
     .application-main {
@@ -472,6 +494,10 @@ body {
     }
     .file-commit-form--full {
         background-color: $bg-color !important;
+    }
+
+    .Header {
+        background-color: $head-bg !important;
     }
 }
 
