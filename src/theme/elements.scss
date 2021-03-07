@@ -19,6 +19,12 @@ body {
     .bg-white {
         background-color: $bg-color !important;
     }
+    .color-bg-secondary {
+        background-color: $bg-color !important;
+    }
+    .color-text-secondary {
+        color: $text-color !important;
+    }
     .pagination {
         a,
         em:focus,
@@ -169,7 +175,6 @@ body {
         border-top-color: $block-bg !important;
     }
 
-
     .Popover-message:before {
         border-bottom-color: $border-color !important;
     }
@@ -190,4 +195,8 @@ body {
 
 .pagehead-actions > li {
     color: $bright-text-color !important;
+}
+
+.signed-commit-header {
+    background-color: $dropdown-bg !important;
 }

@@ -5,6 +5,9 @@ body {
         background-color: $tag-bg-color !important;
         border-color: $border-color !important;
     }
+    .color-bg-canvas {
+        background-color: $bg-color !important;
+    }
     .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
         background: $bg-color !important;
 
@@ -12,7 +15,7 @@ body {
             color: $text-color !important;
         }
 
-        .tabnav-tab {
+        .tabnav-tab[aria-selected='true'] {
             background: $block-bg !important;
             border: 1px solid $border-color;
 
@@ -57,13 +60,17 @@ body {
         color: #aaa !important;
     }
     .Box-row {
+        background-color: $dropdown-bg !important;
         border-color: $border-color !important;
         &:first-of-type {
             border-color: transparent !important;
         }
     }
     .Box-row--focus-gray.navigation-focus {
-        background-color: #090705 !important;
+        background-color: $block-bg !important;
+    }
+    .Box-row--unread {
+        box-shadow: 2px 0 0 $unread-border-color inset !important;
     }
     .discussion-sidebar-item + .discussion-sidebar-item {
         border-color: $border-color !important;
@@ -160,6 +167,7 @@ body {
         background-color: $bg-color !important;
         border-color: $border-color !important;
     }
+    .branch-action-item.border-gray-dark,
     .branch-action-item + .branch-action-item,
     .branch-action-item + .mergeability-details {
         border-color: $border-color !important;
@@ -186,7 +194,7 @@ body {
         border-color: $border-color !important;
     }
     .diffbar {
-        background-color: $tag-bg-color !important;
+        background-color: $bg-color !important;
 
         .stale-files-tab {
             background-color: $bg-color !important;
@@ -275,11 +283,24 @@ body {
     .Label--gray-darker {
         color: $text-color !important;
     }
-}
 
-.AvatarStack-body {
-    background-color: transparent !important;
-    .avatar {
+    .AvatarStack-body {
         background-color: transparent !important;
+        .avatar {
+            background-color: transparent !important;
+        }
+    }
+
+    tab-container,
+    file-attachment {
+        background-color: transparent !important;
+    }
+
+    .write-content {
+        background-color: transparent !important;
+    }
+
+    .js-timeline-marker {
+        background-color: $bg-color !important;
     }
 }
