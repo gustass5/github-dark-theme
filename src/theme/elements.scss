@@ -86,9 +86,11 @@ body {
     .btn-primary {
         color: $bright-text-color !important;
         background-image: $button-primary-bg-image !important;
+        border-color: #164e63 !important;
     }
     .btn-primary:hover {
         background-image: $button-primary-bg-image-hover !important;
+        border-color: #164e63 !important;
     }
     .btn-danger {
         background-image: $button-danger-bg-image !important;

@@ -116,6 +116,55 @@ body {
     :not(.commit-build-statuses) > a:not(.IssueLabel):not(.IssueLabel--big):not(.lh-condensed-ultra) {
         color: $link-color !important;
     }
+    .Label.Label--secondary {
+        color: $contrib-color-3 !important;
+        display: none;
+    }
+    .Label.Label--success {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-tag {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-rocket {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-git-pull-request.open {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-check {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-milestone {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-star {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-eye {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-repo-forked {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-star-fill {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-link {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-book {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-git-branch {
+        color: $contrib-color-3 !important;
+    }
+    .octicon.octicon-gear {
+        color: $contrib-color-3 !important;
+    }
+    .UnderlineNav-item.selected {
+        border-color: $contrib-color-3 !important;
+    }
     .color-text-primary {
         color: $text-color !important;
     }
